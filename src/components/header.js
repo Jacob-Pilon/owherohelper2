@@ -19,7 +19,7 @@ function header() {
   return (
     <div>
       <div className='Header'>
-      <Link to='/'>
+      <Link to='/owherohelper2/'>
       <img src={logo} className="logoImage" alt="logoImage" />
       <h1 className='headerText'>Overwatch 2 Hero Helper</h1>
       </Link>

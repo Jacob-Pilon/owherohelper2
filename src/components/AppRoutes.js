@@ -49,7 +49,7 @@ const AppRoutes = () => {
   return (
     <Routes>
                 <Route exact path="/" element={<Main />} />
-                <Route exact path="/owherohelper2" element={<Main />} />
+                <Route exact path="/owherohelper2/" element={<Main />} />
                 <Route exact path="/about" element={<AboutUs />} />
                 <Route exact path="/about_fr" element={<AboutUsfr />} />
                 <Route exact path="/tierlist" element={<Tierlist />} />

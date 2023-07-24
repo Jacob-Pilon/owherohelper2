@@ -1,38 +1,400 @@
-.App {
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+body{
+  margin:0;
+  padding:0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #2f77be;
+}
+.MainContainer{
+  height:100%;
+  width: 100%;
+  display:flex;
+}
+.content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex:1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/*Other MAIN PAGES (ABOUT, COACHES, etc) TEMPLATE */
+.titleSectionPages {
+  width: 80vw;
+  background-color: orange;
+  padding: 2px 10px;
+  margin: 20px auto; /* Center the title section horizontally and provide some spacing from the top */
+  flex:1;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Play';
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
+}
+
+.contentMainPages {
+  width: 80vw;
+  background-color: #444; /* Adjust the color for the main content area */
+  padding: 10px 10px;
+  margin: 5px auto; /* Center the main content section horizontally and provide some spacing from the title section */
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* Optional: Set the text color and font for the main content */
+  color: white;
+  font-family: 'Play', sans-serif;
+  
+}
+
+/*Other MAIN PAGES (ABOUT, COACHES, etc) TEMPLATE */
+.titleSectionHeroes {
+  width: 80vw;
+  background-color: orange;
+  padding: 2px 10px;
+  margin: 20px auto; /* Center the title section horizontally and provide some spacing from the top */
+  flex:1;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Play';
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
+}
+
+.contentMainHeroes {
+  width: 80vw;
+  background-color: #444; /* Adjust the color for the main content area */
+  padding: 10px 10px;
+  margin: 5px auto; /* Center the main content section horizontally and provide some spacing from the title section */
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* Optional: Set the text color and font for the main content */
+  color: white;
+  font-family: 'Play', sans-serif;
+  
+}
+
+/* Optional: Center the text within the main content area */
+.contentMainPages p {
+  text-align: center;
+}
+.contentMainPages h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* OURCOACHES FORMATTING */
+.ourCoaches{
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ourCoaches .title h1 {
+  font-size: 30px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ourCoaches .container{
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
+}
+.ourCoaches .container:last-child{
+  margin-right: 0px;
+}
+
+.ourCoaches .image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ourCoaches .image-wrapper img {
+  width: 30%; /* Adjust the image size as needed */
+  background-image: linear-gradient(to bottom, rgba(255, 166, 0, 0.63) 0.005%, #404040);
+
+  /* If you want rounded corners, you can use border-radius */
+  border-radius: 10px;
+}
+
+.ourCoaches .paragraph {
+  margin-top: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Add this to your CSS file */
+.role-image-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center; /* Adjust the colors as per your preference */
+  height: 200px; /* Set the height as per your requirement */
+  overflow: hidden; /* Hide any content that overflows from the container */
+}
+
+.role-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.Translate{
+  background-color:orange;
+  font-family: 'Play';
+  padding: 5px;
+}
+
+
+
+/*BOOKNOW BUTTON*/
+.button-container {
+  width: 60%; /* Adjust the width as needed */
+  margin: 10px auto; /* Center the button horizontally with some margin */
+  background-color: #1a2337; /* Dark navy background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Add some padding around the text */
+
+  /* Apply a transition to smoothly darken the background on hover */
+  transition: background-color 0.3s;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
+}
+
+.button-link {
+  display: block; /* Make the link cover the entire button area */
+  text-align: center; /* Center the text horizontally */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  font-family: 'Play'; /* Choose the desired font family */
+
+  /* Apply a transition to smoothly darken the text on hover */
+  transition: color 0.3s;
+}
+
+.button-container:hover {
+  background-color: #0d1421; /* Darken the background color on hover */
+}
+
+.button-link:hover {
+  color: #d3d3d3; /* Darken the text color on hover */
+}
+
+.aboutUs p{
+  font-size: 22px;
+}
+
+.aboutUs{
+  justify-content: center;
+
+}
+
+
+/*HOMEPAGE*/
+.main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex:1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
   color: white;
+  font-family: 'Play';
 }
 
-.App-link {
-  color: #61dafb;
+.main h1{
+  color: white;
+  font-family: 'Play';
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MainLogo{
+  height: calc(width*1.338);
+  width: 28%;
+  margin: 20px;
 }
+
+
+
+/*HEADER*/
+/* HEADER */
+.Header {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, gray 30%, #F99E1A);
+  position: relative; /* Add position relative to the header */
+
+  /* Add a z-index to ensure the search bar is above other content */
+  z-index: 1;
+}
+
+/* Search Bar */
+.Header .HeaderSearchBar {
+  /* Adjust the styles for the search bar as needed */
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the search bar to the right */
+  padding-right: 10px; /* Add some spacing between the search bar and the edge of the header */
+
+  /* Add position: sticky and top: 0 to lock the search bar at the top */
+  position: sticky;
+  top: 0;
+
+  z-index: 1; /* Add a z-index to ensure the search bar is above other content */
+}
+
+
+.Header a {
+  display: flex; /* Ensure the anchor tag expands to cover the image and text */
+  align-items: center; /* Vertically center the content within the anchor */
+  text-decoration: none; /* Remove underline from the anchor text */
+}
+
+.Header img {
+  width: auto;
+  height: 80%; /* Adjust the height as needed to fit the image within the header */
+  max-height: 100px; /* Limit the maximum height of the image to the header's height */
+  margin-left: 10px; /* Add some spacing between the image and the text */
+  background-color: gray;
+  border-radius: 50%;
+  padding: 0px 1px 0px 1px;
+}
+
+.headerText {
+  margin-left: 10px; /* Add spacing between the image and the text */
+  color: white; /* Set the text color */
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: 'Play';
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border effect */
+}
+
+
+.Header .search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.Header .search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  
+.Header .result-image {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 8px;
+  }
+  
+.Header .result-text {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
+
+
+
+
+
+/*SIDEBAR*/
+.Sidebar{
+  height: 100%;
+  width: 200px;
+  background-color: #405275;
+}
+.SidebarList{
+  height: auto;
+  padding: 0;
+  width: 100%;
+  
+}
+.SidebarList .row{
+  width:100%;
+  height: 60px;
+  background-color: #405275;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: #344360;
+  transition: all 0.25s;
+
+}
+.SidebarList #active{
+  background-color: #344360;
+}
+.row #icon{
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title{
+  flex: 70%;
+}
+
+
+/* Add this to your CSS file */
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #f0f0f0; /* Light gray background color */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background-color: #dcdcdc; /* Slightly darker background color on hover */
+}
+
+.search-result-item:active {
+  background-color: #a9a9a9; /* Different color when clicked */
+}
+
+.result-image {
+  width: 30px; /* Set the width of the small image */
+  height: 30px; /* Set the height of the small image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-right: 8px; /* Add some space between the image and the text */
+}
+
+.result-text {
+  flex: 1; /* Allow the text to take up the remaining space */
+  color: black;
+}
+

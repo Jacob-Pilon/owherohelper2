@@ -1,0 +1,156 @@
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Styles for the coach type selection */
+  .coach-types {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .coach-type-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .coach-type-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+  }
+  
+  .coach-type-image.selected {
+    border-color: blue;
+  }
+  
+  .coach-type-tag {
+    margin-top: 5px;
+  }
+  
+  /* Styles for the input fields */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the calendar */
+  /* Styles for the calendar */
+.calendar-container {
+    max-width: 450px; /* Adjust the width to your desired size */
+    margin-bottom: 20px;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    max-width: 450px; /* Adjust the width to your desired size */
+    background: navy;
+    font-family: Arial, sans-serif;
+    line-height: 1.125em;
+  }
+  
+  .react-calendar__navigation {
+    background: #007bff;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 0.5em 0.75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1.25em;
+    width: 1.75em;
+    height: 1.75em;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .react-calendar__navigation button:enabled:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #999;
+  }
+  
+  .react-calendar__tile {
+    max-width: 100%;
+    padding: 0.75em 0.5em;
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+  
+  .react-calendar__tile--now {
+    background: rgba(0, 123, 255, 0.2); /* Light blue background for today's date */
+    border-radius: 50%;
+  }
+  
+  .react-calendar__tile--active {
+    background: rgba(0, 123, 255, 0.4); /* Darker blue background for the selected date */
+    border-radius: 50%;
+  }
+  
+  /* Styles for the time list */
+  .time-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .time-item {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .time-item.selected {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Styles for the submit button */
+  .submit-button-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

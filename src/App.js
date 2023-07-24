@@ -1,5 +1,5 @@
 import './App.css';
-import {HashRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/header';
 import Sidebar from './components/Sidebar';
 import AppRoutes from './components/AppRoutes';

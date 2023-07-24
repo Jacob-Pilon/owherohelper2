@@ -2,6 +2,8 @@ import React from 'react'
 import logo from '../images/logo.png';
 import SearchBar from './Searchbar';
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
+
 
 
 // Sample list of Overwatch heroes
@@ -17,10 +19,10 @@ function header() {
   return (
     <div>
       <div className='Header'>
-        <a href='.'>
-          <img src={logo} className="logoImage" alt="logoImage" />
-          <h1 className='headerText'>Overwatch 2 Hero Helper</h1>
-        </a>
+      <Link to='/'>
+      <img src={logo} className="logoImage" alt="logoImage" />
+      <h1 className='headerText'>Overwatch 2 Hero Helper</h1>
+      </Link>
         <div className='HeaderSearchBar'>
           <SearchIcon />
           <SearchBar heroes={allHeroes} />

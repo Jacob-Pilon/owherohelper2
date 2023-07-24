@@ -8,6 +8,8 @@ import Junkrat from '../images/junkrat.png';
 import Ana from '../images/ana.png';
 import Zenyatta from '../images/zenyatta.png';
 import Mercy from '../images/mercy.png';
+import { Link } from 'react-router-dom';
+
 
 function ourCoaches() {
   return (
@@ -59,9 +61,10 @@ function ourCoaches() {
     </div>
   </div>
     <div class="button-container">
-    <a href="/booknow" class="button-link">
+    <Link to="/booknow" className="button-link">
         Book a coaching session now!
-    </a>
+    </Link>
+
     </div>
 
 

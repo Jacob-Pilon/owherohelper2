@@ -61,7 +61,7 @@ function ourCoaches() {
     </div>
   </div>
     <div class="button-container">
-    <Link to="./booknow" className="button-link">
+    <Link to="/booknow" className="button-link">
         Book a coaching session now!
     </Link>
 
